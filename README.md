@@ -1,8 +1,8 @@
 <h2>Installation</h2>
-<ul>
-  <li>1. Clone the repo </li>
-  <li>2. Install NPM packages </li>
-</ul>
+<ol>
+  <li>Clone the repo </li>
+  <li>Install NPM packages </li>
+</ol>
 <h2>Usage</h2>
 <ul>
   <lI>node commands.js a (Add Item)</lI>
