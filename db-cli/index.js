@@ -28,8 +28,40 @@ const findItem = (title) => {
         });
 }
 
+// Update Item
+const updateItem = (_id, data) => {
+    Item.updateOne({ _id }, data) 
+        .then(() => {
+            console.info('Item Updated');
+            mongoose.connection.close();
+        })
+        
+}
+
+// Remove Item
+const removeItem = (_id) => {
+    Item.deleteOne({ _id })
+        .then(item => {
+            console.info('Item Removed')
+            mongoose.connection.close();
+        })
+}
+
+// List Items
+const listItems = () => {
+    Item.find()
+        .then(items => {
+            console.info(items);
+            console.info(`${items.length} items`);
+            mongoose.connection.close();
+        })
+}
+
 // Export All Methods
 module.exports = {
     addItem,
-    findItem
+    findItem,
+    updateItem,
+    removeItem,
+    listItems
 }
