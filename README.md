@@ -1,3 +1,13 @@
+<h2> About </h2>
+<p> CLI tool for CRUD operations with MongoDB </p>
+<h2> Built With </h2>
+<ul>
+  <li> Node.js </li>
+  <li> Javascript</li>
+  <li> Mongoose </li>
+  <li> Commander </li>
+  <li> Inquirer</li>
+</ul>
 <h2>Installation</h2>
 <ol>
   <li>Clone the repo </li>
