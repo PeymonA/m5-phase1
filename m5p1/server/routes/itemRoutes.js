@@ -12,7 +12,7 @@ app.get("/items", async (request, response) => {
   }
 });
 
-app.get("/item/:keyword", async (request, response) => {
+app.get("/items/:keyword", async (request, response) => {
   try {
     const search = request.params.keyword.toLowerCase();
     const items = await itemModel.find({ $text: { $search: search }  });
@@ -57,6 +57,17 @@ app.delete("/item/:id", async (request, response) => {
     if (!item) response.status(404).send("No item found");
     response.status(200).send();
   } catch (error) {
+    response.status(500).send(error);
+  }
+});
+
+app.delete("/items/:keyword", async (request, response) => {
+  try {
+    const search = request.params.keyword.toLowerCase();
+    await itemModel.deleteMany({ $text: { $search: search }  });
+    response.status(200).send();
+  }
+  catch (error) {
     response.status(500).send(error);
   }
 });
