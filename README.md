@@ -1,5 +1,5 @@
 <h2> About </h2>
-<p> CLI tool for CRUD operations with MongoDB </p>
+<p> CLI tool for CRUD operations with MongoDB and a Server for CRUD operations </p>
 <h2> Built With </h2>
 <ul>
   <li> Node.js </li>
@@ -12,9 +12,15 @@
 <ol>
   <li>Clone the repo </li>
   <li>Install NPM packages </li>
+  <ol>
+    <li> cd ./db-cli </li>
+    <li> npm i </li>
+  </ol>
 </ol>
 <h2>Usage</h2>
 <ul>
+  <p> For CLI</p>
+  <p> cd ./cb-cli </p>
   <lI>node commands.js a (Add Item)</lI>
   <lI>node commands.js f *title* (Find Item)</lI>
   <li>node commands.js u *id* (Update Item)</li>
