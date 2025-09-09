@@ -43,6 +43,14 @@
     <li> From postman </li>
     <ul>
       <li> GET http://localhost:3000/items - Shows all items in database </li>
+      <li> POST http://localhost:3000/item - Adds a new item in database </li>
+      <p> HTTP body structure 
+      <p> "title" : "Mug", <br>
+          "description" : "", <br>
+          "start_price" : 2, <br>
+          "reserve_price" : 2 <br>
+      </p>
+    </ul>
   </ul>
 </ul>
 <h2>Acknowledgements</h2>
