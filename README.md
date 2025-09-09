@@ -13,7 +13,7 @@
   <li>Clone the repo </li>
   <li>Install NPM packages </li>
   <ol>
-    <li> cd ./db-cli </li>
+    <li> cd ./m5p1/db-cli </li>
     <li> npm i </li>
   </ol>
 </ol>
@@ -21,14 +21,14 @@
 <ul>
   <p> For CLI</p>
   <ul>
-    <li> cd ./cb-cli </li>
+    <li> cd ./m5p1/cb-cli </li>
     <ul>
       <lI>node commands.js a (Add Item)</lI>
       <lI>node commands.js f *title* (Find Item)</lI>
       <li>node commands.js u *id* (Update Item)</li>
       <li>node commands.js r *id* (Remove Item)</li>
       <li>node commands.js l (List all Items)</li>
-      <li> OR you can do </li>
+      <p> OR you can do </p>  
       <li> npm link </li>
       <li> and from git-bash you can do all the above commands by replacing "node commands.js" with "db-cli"</li>
     </ul>
