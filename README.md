@@ -26,6 +26,7 @@
   <ul>
     <li> cd ./m5p1/db-cli </li>
     <ul>
+      <lI>node commands.js s (Seeds DB)</lI>
       <lI>node commands.js a (Add Item)</lI>
       <lI>node commands.js f *title* (Find Item)</lI>
       <li>node commands.js u *id* (Update Item)</li>
