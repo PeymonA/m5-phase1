@@ -20,7 +20,9 @@
 <h2>Usage</h2>
 <ul>
   <p> For CLI</p>
-  <p> cd ./cb-cli </p>
+  <ul>
+    <li> cd ./cb-cli </li>
+  </ul>
   <lI>node commands.js a (Add Item)</lI>
   <lI>node commands.js f *title* (Find Item)</lI>
   <li>node commands.js u *id* (Update Item)</li>
