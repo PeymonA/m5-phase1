@@ -44,11 +44,14 @@
     <ul>
       <li> GET http://localhost:3000/items - Shows all items in database </li>
       <li> POST http://localhost:3000/item - Adds a new item in database </li>
+      <br>
       <p> HTTP body structure 
-      <p> "title" : "Mug", <br>
-          "description" : "", <br>
-          "start_price" : 2, <br>
-          "reserve_price" : 2 <br>
+      <p> { <br>
+            "title" : "Mug", <br>
+            "description" : "", <br>
+            "start_price" : 2, <br>
+            "reserve_price" : 2 <br>
+          } <br>
       </p>
     </ul>
   </ul>
