@@ -42,6 +42,10 @@
   <ul>
     <li> cd ./m5p1/server </li>
     <li> node server.js </li>
+    <br>
+    <p> Alternatively you can run from a docker container </p>
+    <p> docker build -t m4:v1 .</p>
+    <p> docker run -p 3000:3000 m4:v0.4</p>
     <li> From postman </li>
     <ul>
       <li> GET http://localhost:3000/item/keyword - Get existing items in database by keyword </li>
