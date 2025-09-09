@@ -15,6 +15,8 @@
   <ol>
     <li> cd ./m5p1/db-cli </li>
     <li> npm i </li>
+    <li> cd ./m5p1/server </li>
+    <li> npm i </li>
   </ol>
 </ol>
 <h2>Usage</h2>
