@@ -54,6 +54,13 @@
             "reserve_price" : 4 <br>
           } <br>
       </p>
+      <li> PATCH http://localhost:3000/item/<id> - Update existing item in database </li>
+      <br>
+      <p> HTTP body structure 
+      <p> { <br>
+            "reserve_price" : 400 <br>
+          } <br>
+      </p>
     </ul>
   </ul>
 </ul>
