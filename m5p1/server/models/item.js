@@ -9,7 +9,8 @@ const itemSchema = new Schema({
     title: { 
         type: String, 
         required: true, 
-        trim: true
+        trim: true,
+        lowercase: true,
     },
 
     description: { 
@@ -33,6 +34,8 @@ const itemSchema = new Schema({
         },
     }
 });
+
+itemSchema.index({ title: 'text', description: 'text' });
 
 // Define and export
 module.exports = mongoose.model('Item', itemSchema);
