@@ -5,9 +5,9 @@ const ObjectId = Schema.ObjectId;
 
 //Item Schema
 const itemSchema = new Schema({
-    title: { type: String},
+    title: { type: String, required: true},
     description: { type: String},
-    start_price: { type: Number},
+    start_price: { type: Number, required: true},
     reserve_price: { type: Number}
 });
 
