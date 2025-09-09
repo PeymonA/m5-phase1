@@ -12,6 +12,16 @@ app.get("/items", async (request, response) => {
   }
 });
 
+app.get("/item/:id", async (request, response) => {
+  try {
+    const item = await itemModel.findById( request.params.id );
+    if (!item) response.status(404).send("No item found");
+    response.status(200).send(item);
+  } catch (error) {
+    response.status(500).send(error);
+  }
+});
+
 app.post("/item", async (request, response) => {
   const item = new itemModel(request.body);
 
