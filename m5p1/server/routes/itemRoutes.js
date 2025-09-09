@@ -12,12 +12,13 @@ app.get("/items", async (request, response) => {
   }
 });
 
-app.get("/item/:id", async (request, response) => {
+app.get("/item/:title", async (request, response) => {
   try {
-    const item = await itemModel.findById( request.params.id );
-    if (!item) response.status(404).send("No item found");
-    response.status(200).send(item);
-  } catch (error) {
+    const search = request.params.title.toLowerCase();
+    const items = await itemModel.find({ $text: { $search: search }  });
+    response.status(200).send(items)
+  }
+  catch (error) {
     response.status(500).send(error);
   }
 });
