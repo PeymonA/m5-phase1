@@ -12,9 +12,9 @@ app.get("/items", async (request, response) => {
   }
 });
 
-app.get("/item/:title", async (request, response) => {
+app.get("/item/:keyword", async (request, response) => {
   try {
-    const search = request.params.title.toLowerCase();
+    const search = request.params.keyword.toLowerCase();
     const items = await itemModel.find({ $text: { $search: search }  });
     response.status(200).send(items)
   }

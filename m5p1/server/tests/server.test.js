@@ -8,7 +8,7 @@ describe('GET /items', () => {
     });
 });
 
-describe('GET /item/<title>', () => {
+describe('GET /item/<keyword>', () => {
     it('responds with 200', async () => {
         const postBody = {
                 "title" : "iPhone",
