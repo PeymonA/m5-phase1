@@ -7,6 +7,7 @@
   <li> Mongoose </li>
   <li> Commander </li>
   <li> Inquirer</li>
+  <li> Express </li>
 </ul>
 <h2>Installation</h2>
 <ol>
