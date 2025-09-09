@@ -34,6 +34,14 @@
       <li> and from git-bash you can do all the above commands by replacing "node commands.js" with "db-cli"</li>
     </ul>
   </ul>
+  <p> For Server </p>
+  <ul>
+    <li> cd ./m5p1/server </li>
+    <li> node server.js </li>
+    <li> From postman </li>
+    <ul>
+      <li> GET http://localhost:3000/items - Shows all items in database </li>
+  </ul>
 </ul>
 <h2>Acknowledgements</h2>
 <p> youtube.com/watch?si=jSXuOUfZSYggzzGp&v=v2GKt39-LPA&feature=youtu.be </p>
