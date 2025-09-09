@@ -43,6 +43,7 @@
     <li> node server.js </li>
     <li> From postman </li>
     <ul>
+      <li> GET http://localhost:3000/item/id - Get existing item in database by id </li>
       <li> GET http://localhost:3000/items - Shows all items in database </li>
       <li> POST http://localhost:3000/item - Adds a new item in database </li>
       <br>
@@ -61,6 +62,7 @@
             "reserve_price" : 400 <br>
           } <br>
       </p>
+      <li> DELETE http://localhost:3000/item/id - Delete existing item in database </li>
     </ul>
   </ul>
 </ul>
