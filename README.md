@@ -21,7 +21,7 @@
 <ul>
   <p> For CLI</p>
   <ul>
-    <li> cd ./m5p1/cb-cli </li>
+    <li> cd ./m5p1/db-cli </li>
     <ul>
       <lI>node commands.js a (Add Item)</lI>
       <lI>node commands.js f *title* (Find Item)</lI>
