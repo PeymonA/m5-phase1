@@ -64,6 +64,7 @@
       </p>
       <li> DELETE http://localhost:3000/item/id - Delete existing item in database </li>
       <li> DELETE http://localhost:3000/item/keyword - Delete existing items in database by keyword </li>
+      <li> DELETE http://localhost:3000/items/ - Drops database </li>
     </ul>
   </ul>
 </ul>
