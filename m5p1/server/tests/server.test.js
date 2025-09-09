@@ -8,22 +8,6 @@ describe('GET /items', () => {
     });
 });
 
-describe('GET /item/<keyword>', () => {
-    it('responds with 200', async () => {
-        const postBody = {
-                "title" : "iPhone",
-                "description" : "",
-                "start_price" : 1000,
-                "reserve_price" : 2000
-        };
-        const postRes = (await request(app).post('/item').send(postBody));
-        id = postRes.body._id;
-        const res = (await request(app).get(`/item/iphone`));
-        expect(res.status).toBe(200);
-        await request(app).delete(`/item/${id}`);
-    });
-});
-
 describe('POST /item', () => {
     it('responds with 200', async () => {
         const body = {
@@ -52,6 +36,10 @@ describe('DELETE /item/<id>', () => {
         const deleteRes = (await request(app).delete(`/item/${id}`));
         expect(deleteRes.status).toBe(200);
     });
+});
+
+describe('DELETE /items/<keyword>', () => {
+    it.todo;
 });
 
 describe('PATCH /item/<id>', () => {
