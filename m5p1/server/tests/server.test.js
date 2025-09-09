@@ -45,6 +45,13 @@ describe('DELETE /items/<keyword>', () => {
     });
 });
 
+describe('DELETE /items/', () => {
+    it('responds with 200', async() => {
+        const res = await request(app).delete("/items");
+        expect(res.status).toBe(200);
+    });
+});
+
 describe('PATCH /item/<id>', () => {
     it('responds with 200', async () => {
         const postBody = {

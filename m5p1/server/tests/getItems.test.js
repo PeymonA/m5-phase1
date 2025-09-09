@@ -17,11 +17,8 @@ describe('GET /items/<keyword>', () => {
     });
 
     it('Sunny Day Scenario', async () => {
-        //clearing Db
-        const testRes = (await request(app).get(`/items/iphone`));
-        if (testRes.body.length != 0) {
-            await request(app).delete(`/items/iphone`);
-        }
+        // declaring a const halts execution for some reason
+        const waiting = await request(app).delete("/items");
 
         const postBody1 = {
                 "title" : "iPhone",
@@ -52,4 +49,6 @@ describe('GET /items/<keyword>', () => {
 
         await request(app).delete(`/items/iphone`);
     });
+
+    it.todo;
 });
