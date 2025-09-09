@@ -8,6 +8,7 @@
   <li> Commander </li>
   <li> Inquirer</li>
   <li> Express </li>
+  <li> Docker </li>
 </ul>
 <h2>Installation</h2>
 <ol>
