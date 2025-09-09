@@ -48,9 +48,9 @@
       <p> HTTP body structure 
       <p> { <br>
             "title" : "Mug", <br>
-            "description" : "", <br>
+            "description" : "A Mug", <br>
             "start_price" : 2, <br>
-            "reserve_price" : 2 <br>
+            "reserve_price" : 4 <br>
           } <br>
       </p>
     </ul>
