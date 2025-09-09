@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // Map global promise
 mongoose.Promise = global.Promise;
 // Connect to db
-const db = mongoose.connect('mongodb://localhost:27017/db-cli');
+const db = mongoose.connect('mongodb://localhost:27017/m5-p1');
 
 // Import model
 const Item = require('./models/item');
