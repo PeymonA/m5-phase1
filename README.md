@@ -28,6 +28,7 @@
       <li>node commands.js u *id* (Update Item)</li>
       <li>node commands.js r *id* (Remove Item)</li>
       <li>node commands.js l (List all Items)</li>
+      <br>
       <p> OR you can do </p>  
       <li> npm link </li>
       <li> and from git-bash you can do all the above commands by replacing "node commands.js" with "db-cli"</li>
