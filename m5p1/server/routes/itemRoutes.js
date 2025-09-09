@@ -72,4 +72,14 @@ app.delete("/items/:keyword", async (request, response) => {
   }
 });
 
+app.delete("/items", async (request, response) => {
+  try {
+    await itemModel.deleteMany({});
+    response.status(200).send();
+  }
+  catch (error) {
+    response.status(500).send(error);
+  }
+})
+
 module.exports = app;

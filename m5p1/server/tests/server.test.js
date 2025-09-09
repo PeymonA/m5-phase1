@@ -39,7 +39,10 @@ describe('DELETE /item/<id>', () => {
 });
 
 describe('DELETE /items/<keyword>', () => {
-    it.todo;
+    it('responds with 200', async() => {
+        const res = await request(app).delete(`/items/iphone`);
+        expect(res.status).toBe(200);
+    });
 });
 
 describe('PATCH /item/<id>', () => {
