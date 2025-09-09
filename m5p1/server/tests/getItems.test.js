@@ -3,6 +3,8 @@ const app = require('../server.js');
 
 describe('GET /items/<keyword>', () => {
     it('responds with 200', async () => {
+        const waiting = await request(app).delete("/items");
+        
         const postBody = {
                 "title" : "iPhone",
                 "description" : "",

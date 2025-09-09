@@ -8,6 +8,38 @@ const db = mongoose.connect('mongodb://localhost:27017/m5-p1');
 // Import model
 const Item = require('./models/item');
 
+// Seed db
+const seed = async () => {
+  try {
+    await Item.deleteMany({});
+    await Item.create({
+      title: "Big Mac",
+      description: "A Big Mac",
+      start_price: "12",
+      reserve_price: "20"
+    });
+    await Item.create({
+      title: "Cheeseburger",
+      description: "A Cheeseburger",
+      start_price: "6",
+      reserve_price: "12"
+    });
+    await Item.create({
+      title: "Chicken Burger",
+      description: "A Chicken Burger",
+      start_price: "120",
+      reserve_price: "200"
+    });
+
+    console.info("DB Seeded");
+  } catch (err) {
+    console.error(err);
+  } finally {
+    mongoose.connection.close();
+  }
+};
+
+
 // Add Item
 const addItem = (item) => {
     Item.create(item).then(item => {
@@ -63,5 +95,6 @@ module.exports = {
     findItem,
     updateItem,
     removeItem,
-    listItems
+    listItems,
+    seed
 }

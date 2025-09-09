@@ -7,7 +7,8 @@ const {
     findItem,
     updateItem,
     removeItem,
-    listItems
+    listItems,
+    seed
 } = require('./index');
 
 // Item Questions
@@ -86,5 +87,12 @@ program
     .alias('l')
     .description('List all items')
     .action(() => listItems());
+
+// Seed DB
+program
+    .command('seed')
+    .alias('s')
+    .description('Seed DB')
+    .action(() => seed());
 
 program.parse(process.argv);
